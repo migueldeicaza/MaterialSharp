@@ -1,0 +1,118 @@
+﻿// MaterialProperties.tt: Repetitive properties that are used on all Material UI elements
+//
+// Authors: 
+//    LeVan Nghia (original Swift code)
+//    Miguel de Icaza (C# port)
+//
+<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+using CoreAnimation;
+using CoreGraphics;
+using UIKit;
+using Foundation;
+using System;
+
+namespace MaterialSharp {
+
+<# var types = new [] {"Button", "ImageView", "Label", "TextField", "TableViewCell"}; #>
+<# foreach (var type in types) { #>
+<#= "    public partial class Material" + type + " {" #>
+<#= "        public Material" + type + " (NSCoder coder) : base (coder)"#>
+		{
+			SetupLayer ();
+		}
+
+<#=	"        protected Material" + type + " (IntPtr handle) : base (handle)" #>
+		{
+			SetupLayer ();
+		}
+
+		MaterialLayer materialLayer;
+	
+		public override CGRect Bounds {
+			get {
+				return base.Bounds;
+			}
+			set {
+				base.Bounds = value;
+				materialLayer.SuperLayerDidResize ();
+			}
+		}
+
+		bool maskEnabled = true;
+		public bool MaskEnabled {
+			get { return maskEnabled; }
+			set {
+				maskEnabled = value;
+				materialLayer.EnableMask (value);
+			}
+		}
+
+		RippleLocation rippleLocation = RippleLocation.TapLocation;
+		public RippleLocation RippleLocation {
+			get { return rippleLocation; }
+			set { 
+				rippleLocation = value;
+				materialLayer.RippleLocation = value;
+			}
+		}
+
+		public float MaterialAnimationDuration = 0.65f;
+		public CAMediaTimingFunction CircleAnimationTimingFunction = MaterialLayer.LinearTiming;
+		public CAMediaTimingFunction BackgroundAnimationTimingFunction = MaterialLayer.LinearTiming;
+
+		bool backgroundAnimationEnabled = true;
+		public bool BackgroundAnimationEnabled {
+			get { return backgroundAnimationEnabled; }
+			set { 
+				if (backgroundAnimationEnabled == value)
+					return;
+				backgroundAnimationEnabled = value; 
+				if (!value)
+					materialLayer.EnableOnlyCircleLayer ();
+			}
+		}
+			
+		float circleGrowRatioMask = 0.9f;
+		public float CircleGrowRatioMask { 
+			get { return circleGrowRatioMask; }
+			set {
+				circleGrowRatioMask = value;
+				materialLayer.CircleGrowRatioMax = value;
+			}
+		}
+
+		nfloat cornerRadius = 2.5f;
+		public nfloat CornerRadius { 
+			get { return cornerRadius; }
+			set { 
+				cornerRadius = value;
+				materialLayer.SetMaskLayerCornerRadius (cornerRadius);
+			}
+		}
+
+		UIColor circleLayerColor = UIColor.FromWhiteAlpha (0.45f, 0.5f);
+		public UIColor CircleLayerColor {
+			get { return circleLayerColor; }
+			set { 
+				value = circleLayerColor;
+				materialLayer.SetCircleLayerColor (value);
+			}
+		}
+
+		UIColor backgroundLayerColor = UIColor.FromWhiteAlpha (0.75f, 0.5f);
+		public UIColor BackgroundLayerColor {
+			get { return BackgroundLayerColor; }
+			set { 
+				value = backgroundLayerColor;
+				materialLayer.SetBackgroundLayerColor (value);
+			}
+		}
+    }
+
+
+<# } #>
+}
