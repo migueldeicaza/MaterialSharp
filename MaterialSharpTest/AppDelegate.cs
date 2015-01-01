@@ -13,28 +13,20 @@ namespace MaterialSharpTest
 	[Register ("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		// class-level declarations
-		UIWindow window;
+		public override UIWindow Window { get; set; }
 
-		//
-		// This method is invoked when the application has loaded and is ready to run. In this
-		// method you should instantiate the window, load the UI into it and then make the window
-		// visible.
-		//
-		// You have 17 seconds to return from this method, or iOS will terminate your application.
-		//
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
-			// create a new window instance based on the screen size
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
-			
-			// If you have defined a root view controller, set it here:
-			// window.RootViewController = myViewController;
-			
-			// make the window visible
-			window.MakeKeyAndVisible ();
-			
+			//Window = new UIWindow (UIScreen.MainScreen.Bounds);
+			//Window.MakeKeyAndVisible ();
+			var x = new MaterialSharp.MaterialButton (UIScreen.MainScreen.Bounds);
 			return true;
+		}
+
+		static void Main (string[] args)
+		{
+
+			UIApplication.Main (args, null, "AppDelegate");
 		}
 	}
 }

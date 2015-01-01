@@ -13,9 +13,11 @@ using System;
 using UIKit;
 using CoreGraphics;
 using Foundation;
+using System.ComponentModel;
 
 namespace MaterialSharp
 {
+	[DesignTimeVisible]
 	public partial class MaterialTableViewCell : UITableViewCell
 	{
 		public MaterialTableViewCell (UITableViewCellStyle style, NSString reuseIdentifier) : base (style, reuseIdentifier)

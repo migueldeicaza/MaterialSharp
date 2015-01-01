@@ -1,5 +1,5 @@
 ﻿//
-// MaterialLayer: Provides a layer with the support to render the material effects
+// MaterialLayer: Provides a layer with the support to render the material effectsins
 //
 // Authors: 
 //    LeVan Nghia (original Swift code)

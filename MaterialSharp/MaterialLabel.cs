@@ -8,9 +8,11 @@
 using UIKit;
 using CoreGraphics;
 using Foundation;
+using System.ComponentModel;
 
 namespace MaterialSharp
 {
+	[DesignTimeVisible]
 	public partial class MaterialLabel : UILabel
 	{
 		public MaterialLabel (CGRect frame) : base (frame)

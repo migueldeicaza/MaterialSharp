@@ -92,20 +92,31 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\icon1.png" />
+    <BundleResource Include="Resources\icon2.png" />
+    <BundleResource Include="Resources\uibaritem_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="ButtonsViewController.cs" />
+    <Compile Include="ButtonsViewController.designer.cs">
+      <DependentUpon>ButtonsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextFieldViewController.cs" />
+    <Compile Include="TextFieldViewController.designer.cs">
+      <DependentUpon>TextFieldViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -113,5 +124,8 @@
       <Project>{98750F4F-A3DF-4309-8AD3-F15B73E4A10E}</Project>
       <Name>MaterialSharp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
 </Project>

@@ -10,9 +10,12 @@ using UIKit;
 using CoreGraphics;
 using CoreAnimation;
 using Foundation;
+using System.ComponentModel;
 
 namespace MaterialSharp
 {
+	[DesignTimeVisible]
+	[Register ("MaterialButton")]
 	public partial class MaterialButton : UIButton {
 
 		public bool ShadowAnimationEnabled = true;

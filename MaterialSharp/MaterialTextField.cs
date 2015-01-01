@@ -14,9 +14,11 @@ using UIKit;
 using CoreGraphics;
 using Foundation;
 using CoreAnimation;
+using System.ComponentModel;
 
 namespace MaterialSharp
 {
+	[DesignTimeVisible]
 	public partial class MaterialTextField : UITextField
 	{
 		public CGSize Padding = new CGSize (5, 5);
