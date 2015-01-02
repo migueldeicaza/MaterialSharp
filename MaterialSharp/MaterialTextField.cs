@@ -149,7 +149,7 @@ namespace MaterialSharp
 
 		public override CGRect EditingRect (CGRect forBounds)
 		{
-			return base.TextRect (forBounds);
+			return TextRect (forBounds);
 		}
 
 		void SetFloatingLabelOverlapTextField ()
