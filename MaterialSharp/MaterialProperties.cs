@@ -93,6 +93,7 @@ namespace MaterialSharp {
 			get { return cornerRadius; }
 			set { 
 				cornerRadius = value;
+				Layer.CornerRadius = value;
 				materialLayer.SetMaskLayerCornerRadius (cornerRadius);
 			}
 		}
@@ -102,7 +103,7 @@ namespace MaterialSharp {
 		public UIColor CircleLayerColor {
 			get { return circleLayerColor; }
 			set { 
-				value = circleLayerColor;
+				circleLayerColor = value;
 				materialLayer.SetCircleLayerColor (value);
 			}
 		}

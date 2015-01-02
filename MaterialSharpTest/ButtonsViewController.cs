@@ -29,9 +29,9 @@ namespace MaterialSharpTest
 			flatbkg.Layer.ShadowColor = UIColor.Black.CGColor;
 			flatbkg.Layer.ShadowOffset = new CGSize (0, 2.5f);
 
-			flatbutton.MaskEnabled = true;
+			flatbutton.MaskEnabled = false;
 			flatbutton.CircleGrowRatioMask = 0.5f;
-			flatbutton.BackgroundAnimationEnabled = true;
+			flatbutton.BackgroundAnimationEnabled = false;
 			flatbutton.RippleLocation = RippleLocation.Center;
 
 			imagebutton1.CircleLayerColor = MaterialColor.DeepOrange;

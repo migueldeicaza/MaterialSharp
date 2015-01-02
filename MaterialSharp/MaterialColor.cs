@@ -36,7 +36,7 @@ namespace MaterialSharp
 		{
 			return new UIColor (
 				red: (code >> 16) / 255.0f,
-				green: ((code & 0xff00) >> 16) / 255.0f,
+				green: ((code & 0xff00) >> 8) / 255.0f,
 				blue: (code & 0xff) / 255.0f,
 				alpha: 1.0f);
 		}

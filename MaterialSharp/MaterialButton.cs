@@ -39,9 +39,9 @@ namespace MaterialSharp
 
 		void SetupLayer ()
 		{
-			materialLayer = new MaterialLayer (Layer);
 			AdjustsImageWhenHighlighted = false;
-			CornerRadius = 2.5f;
+			cornerRadius = 2.5f;
+			materialLayer = new MaterialLayer (Layer);
 			materialLayer.SetBackgroundLayerColor (BackgroundLayerColor);
 			materialLayer.SetCircleLayerColor (CircleLayerColor);
 		}

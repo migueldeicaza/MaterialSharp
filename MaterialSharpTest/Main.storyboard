@@ -147,29 +147,35 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="419" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="419" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton" misplaced="YES">
                                 <rect key="frame" x="60" y="95" width="200" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.20392156862745098" green="0.50196078431372548" blue="0.96078431372549022" alpha="1"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0" green="0.47843137254901963" blue="1" alpha="1"/>
                                 <state key="normal" title="RaisedButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
                                 </state>
                                 <constraints>
                                     <constraint id="428" firstItem="419" firstAttribute="width" constant="200"/>
                                 </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="420" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="420" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton" misplaced="YES">
                                 <rect key="frame" x="60" y="146" width="200" height="30"/>
                                 <state key="normal" title="Flat button background">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.21568627450980393" green="0.25098039215686274" blue="0.66666666666666663" alpha="1"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="437" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="437" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton" misplaced="YES">
                                 <rect key="frame" x="60" y="196" width="200" height="30"/>
                                 <state key="normal" title="Flat button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.47450980392156861" green="0.73725490196078436" blue="0.19607843137254902" alpha="1"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" id="441" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
-                                <rect key="frame" x="42" y="269" width="76" height="80"/>
+                                <rect key="frame" x="42" y="267" width="76" height="80"/>
                                 <state key="normal" title="Button" image="icon1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -189,7 +195,7 @@
                                 </constraints>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" id="459" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
-                                <rect key="frame" x="202" y="269" width="76" height="80"/>
+                                <rect key="frame" x="202" y="267" width="76" height="80"/>
                                 <state key="normal" title="Button" image="icon2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -199,20 +205,20 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="470" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
-                                <rect key="frame" x="36" y="389" width="64" height="64"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                <rect key="frame" x="36" y="387" width="80" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.792156862745098" green="0.14901960784313725" blue="0.094117647058823528" alpha="1"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="→">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
                                 </state>
                                 <constraints>
-                                    <constraint id="471" firstItem="470" firstAttribute="width" constant="64"/>
-                                    <constraint id="472" firstItem="470" firstAttribute="height" constant="64"/>
+                                    <constraint id="471" firstItem="470" firstAttribute="width" constant="80"/>
+                                    <constraint id="472" firstItem="470" firstAttribute="height" constant="80"/>
                                 </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="475" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialButton">
-                                <rect key="frame" x="208" y="389" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="475" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
+                                <rect key="frame" x="180" y="387" width="80" height="80"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.23529411764705882" green="0.6470588235294118" blue="0.22745098039215686" alpha="1"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="→">
@@ -220,8 +226,8 @@
                                     <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
                                 </state>
                                 <constraints>
-                                    <constraint id="476" firstItem="475" firstAttribute="width" constant="64"/>
-                                    <constraint id="477" firstItem="475" firstAttribute="height" constant="64"/>
+                                    <constraint id="476" firstItem="475" firstAttribute="width" constant="80"/>
+                                    <constraint id="477" firstItem="475" firstAttribute="height" constant="80"/>
                                 </constraints>
                             </button>
                         </subviews>
