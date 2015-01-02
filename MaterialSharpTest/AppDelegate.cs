@@ -20,6 +20,7 @@ namespace MaterialSharpTest
 			//Window = new UIWindow (UIScreen.MainScreen.Bounds);
 			//Window.MakeKeyAndVisible ();
 			var x = new MaterialSharp.MaterialButton (UIScreen.MainScreen.Bounds);
+			var y = new MaterialSharp.MaterialTextField (UIScreen.MainScreen.Bounds);
 			return true;
 		}
 

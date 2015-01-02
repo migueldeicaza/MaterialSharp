@@ -201,7 +201,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="470" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialButton">
                                 <rect key="frame" x="36" y="389" width="64" height="64"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="→">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
@@ -214,7 +214,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="475" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialButton">
                                 <rect key="frame" x="208" y="389" width="64" height="64"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.23529411764705882" green="0.6470588235294118" blue="0.22745098039215686" alpha="1"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="→">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
@@ -272,53 +272,60 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="601" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="85" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="602" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialTextField">
+                                <rect key="frame" x="20" y="91" width="280" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="657" firstAttribute="width" constant="280"/>
+                                    <constraint id="658" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="602" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialTextField">
-                                <rect key="frame" x="20" y="85" width="280" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="610" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="610" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialTextField">
                                 <rect key="frame" x="20" y="129" width="280" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="661" firstAttribute="width" constant="280"/>
+                                    <constraint id="662" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="611" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="611" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialTextField">
                                 <rect key="frame" x="20" y="167" width="280" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="665" firstAttribute="width" constant="280"/>
+                                    <constraint id="666" firstAttribute="height" constant="30"/>
+                                </constraints>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="612" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialTextField">
-                                <rect key="frame" x="20" y="212" width="280" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="612" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialTextField" fixedFrame="YES">
+                                <rect key="frame" x="20" y="205" width="280" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="613" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialTextField">
-                                <rect key="frame" x="20" y="269" width="280" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="613" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialTextField" fixedFrame="YES">
+                                <rect key="frame" x="20" y="269" width="280" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="614" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" customClass="MaterialTextField">
-                                <rect key="frame" x="20" y="318" width="280" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="line" minimumFontSize="17" id="614" translatesAutoresizingMaskIntoConstraints="NO" customClass="MaterialTextField" fixedFrame="YES">
+                                <rect key="frame" x="20" y="337" width="280" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Regular" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint id="615" firstItem="611" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="616" firstItem="610" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="617" firstItem="612" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="618" firstItem="613" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="619" firstItem="614" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="620" firstItem="611" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="621" firstItem="610" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="622" firstItem="612" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="623" firstItem="613" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
-                            <constraint id="624" firstItem="614" firstAttribute="leading" secondItem="602" secondAttribute="leading" constant="0.0"/>
+                            <constraint id="655" firstItem="602" firstAttribute="top" secondItem="492" secondAttribute="top" constant="91"/>
+                            <constraint id="656" firstItem="492" firstAttribute="trailing" secondItem="602" secondAttribute="trailing" constant="20"/>
+                            <constraint id="659" firstItem="610" firstAttribute="top" secondItem="492" secondAttribute="top" constant="129"/>
+                            <constraint id="660" firstItem="492" firstAttribute="trailing" secondItem="610" secondAttribute="trailing" constant="20"/>
+                            <constraint id="663" firstItem="611" firstAttribute="top" secondItem="492" secondAttribute="top" constant="167"/>
+                            <constraint id="664" firstItem="492" firstAttribute="trailing" secondItem="611" secondAttribute="trailing" constant="20"/>
                         </constraints>
                     </view>
                     <connections>

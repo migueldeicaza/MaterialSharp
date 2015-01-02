@@ -13,6 +13,7 @@ using System.ComponentModel;
 namespace MaterialSharp
 {
 	[DesignTimeVisible]
+	[Register ("MaterialLabel")]
 	public partial class MaterialLabel : UILabel
 	{
 		public MaterialLabel (CGRect frame) : base (frame)

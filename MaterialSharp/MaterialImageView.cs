@@ -14,6 +14,7 @@ using System.ComponentModel;
 namespace MaterialSharp
 {
 	[DesignTimeVisible]
+	[Register ("MaterialImageView")]
 	public partial class MaterialImageView : UIImageView
 	{
 		public MaterialImageView (CGRect frame) : base (frame)

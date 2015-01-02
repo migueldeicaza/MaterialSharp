@@ -18,6 +18,7 @@ using System.ComponentModel;
 namespace MaterialSharp
 {
 	[DesignTimeVisible]
+	[Register ("MaterialTableViewCell")]
 	public partial class MaterialTableViewCell : UITableViewCell
 	{
 		public MaterialTableViewCell (UITableViewCellStyle style, NSString reuseIdentifier) : base (style, reuseIdentifier)

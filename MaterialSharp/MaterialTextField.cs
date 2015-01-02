@@ -19,6 +19,7 @@ using System.ComponentModel;
 namespace MaterialSharp
 {
 	[DesignTimeVisible]
+	[Register ("MaterialTextField")]
 	public partial class MaterialTextField : UITextField
 	{
 		public CGSize Padding = new CGSize (5, 5);
@@ -31,7 +32,7 @@ namespace MaterialSharp
 		UILabel floatingLabel;
 		CALayer bottomBorderLayer;
 
-		UIFont floatingLabelFont;
+		UIFont floatingLabelFont = UIFont.BoldSystemFontOfSize (10);
 
 		public UIFont FloatingLabelFont {
 			get { return floatingLabelFont; }
@@ -59,7 +60,8 @@ namespace MaterialSharp
 			get { return bottomBorder; }
 			set {
 				bottomBorder = value;
-				bottomBorderLayer.RemoveFromSuperLayer ();
+				if (bottomBorderLayer != null)
+					bottomBorderLayer.RemoveFromSuperLayer ();
 				bottomBorderLayer = null;
 				if (value) {
 					bottomBorderLayer = new CALayer () {
