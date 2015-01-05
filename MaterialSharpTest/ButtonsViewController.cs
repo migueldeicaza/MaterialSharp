@@ -1,12 +1,14 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using System.ComponentModel;
 using UIKit;
 using CoreGraphics;
 using MaterialSharp;
 
 namespace MaterialSharpTest
 {
+	[DesignTimeVisible (true)]
 	partial class ButtonsViewController : UIViewController
 	{
 		public ButtonsViewController (IntPtr handle) : base (handle)

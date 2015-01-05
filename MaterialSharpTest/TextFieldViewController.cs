@@ -1,11 +1,13 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using System.ComponentModel;
 using UIKit;
 using MaterialSharp;
 
 namespace MaterialSharpTest
 {
+	[DesignTimeVisible (true)]
 	partial class TextFieldViewController : UIViewController
 	{
 		public TextFieldViewController (IntPtr handle) : base (handle)

@@ -13,7 +13,7 @@ using System.ComponentModel;
 
 namespace MaterialSharp
 {
-	[DesignTimeVisible]
+	[DesignTimeVisible (true)]
 	[Register ("MaterialImageView")]
 	public partial class MaterialImageView : UIImageView
 	{

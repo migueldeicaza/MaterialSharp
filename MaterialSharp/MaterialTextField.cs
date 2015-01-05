@@ -18,7 +18,7 @@ using System.ComponentModel;
 
 namespace MaterialSharp
 {
-	[DesignTimeVisible]
+	[DesignTimeVisible (true)]
 	[Register ("MaterialTextField")]
 	public partial class MaterialTextField : UITextField
 	{
