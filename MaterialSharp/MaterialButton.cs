@@ -15,6 +15,7 @@ using System.ComponentModel;
 namespace MaterialSharp
 {
 	[DesignTimeVisible (true)]
+	[Category ("MaterialSharp")]
 	[Register ("MaterialButton")]
 	public partial class MaterialButton : UIButton {
 

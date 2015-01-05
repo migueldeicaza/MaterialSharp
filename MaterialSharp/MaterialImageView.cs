@@ -14,6 +14,7 @@ using System.ComponentModel;
 namespace MaterialSharp
 {
 	[DesignTimeVisible (true)]
+	[Category ("MaterialSharp")]
 	[Register ("MaterialImageView")]
 	public partial class MaterialImageView : UIImageView
 	{

@@ -18,6 +18,7 @@ using System.ComponentModel;
 namespace MaterialSharp
 {
 	[DesignTimeVisible (true)]
+	[Category ("MaterialSharp")]
 	[Register ("MaterialTableViewCell")]
 	public partial class MaterialTableViewCell : UITableViewCell
 	{
