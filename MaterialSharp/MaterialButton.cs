@@ -31,9 +31,9 @@ namespace MaterialSharp
 			
 		public CAMediaTimingFunction ShadowAnimationTimingFunction = MaterialLayer.EaseOutTiming;
 
-		public MaterialButton (CGRect frame) : base (UIButtonType.Custom)
+		public MaterialButton (CGRect frame) : base (frame)
 		{
-			Frame = frame;
+			//Frame = frame;
 			SetupLayer ();
 		}
 
