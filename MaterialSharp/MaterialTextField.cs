@@ -118,15 +118,16 @@ namespace MaterialSharp
 		public override void LayoutSubviews ()
 		{
 			base.LayoutSubviews ();
-			if (!FloatingPlaceholder)
-				return;
-			if (Text == "")
-				HideFloatingLabel ();
-			else {
-				floatingLabel.TextColor = IsFirstResponder ? TintColor : floatingLabelTextColor;
-				if (floatingLabel.Alpha == 0.0)
-					ShowFloatingLabel ();
+			if (FloatingPlaceholder) {
+				if (Text == "")
+					HideFloatingLabel ();
+				else {
+					floatingLabel.TextColor = IsFirstResponder ? TintColor : floatingLabelTextColor;
+					if (floatingLabel.Alpha == 0.0)
+						ShowFloatingLabel ();
+				}
 			}
+
 			if (bottomBorderLayer != null) {
 				bottomBorderLayer.BackgroundColor = (IsFirstResponder ? TintColor : BottomBorderColor).CGColor;
 				var borderWidth = IsFirstResponder ? BottomBorderHighlightWidth : BottomBorderWidth;
