@@ -23,7 +23,7 @@ namespace MaterialSharp {
 			SetupLayer ();
 		}
 
-        protected MaterialButton (IntPtr handle) : base (handle)
+        public MaterialButton (IntPtr handle) : base (handle)
 		{
 			SetupLayer ();
 		}
@@ -42,6 +42,7 @@ namespace MaterialSharp {
 
 		bool maskEnabled = true;
 		[Browsable(true)]
+		[Export("MaskEnabled")]
 		public bool MaskEnabled {
 			get { return maskEnabled; }
 			set {
@@ -52,6 +53,7 @@ namespace MaterialSharp {
 
 		RippleLocation rippleLocation = RippleLocation.TapLocation;
 		[Browsable(true)]
+		[Export("RippleLocation")]
 		public RippleLocation RippleLocation {
 			get { return rippleLocation; }
 			set { 
@@ -66,6 +68,7 @@ namespace MaterialSharp {
 
 		bool backgroundAnimationEnabled = true;
 		[Browsable(true)]
+		[Export("BackgroundAnimationEnabled")]
 		public bool BackgroundAnimationEnabled {
 			get { return backgroundAnimationEnabled; }
 			set { 
@@ -79,6 +82,7 @@ namespace MaterialSharp {
 			
 		float circleGrowRatioMask = 0.9f;
 		[Browsable(true)]
+		[Export("CircleGrowRatioMask")]
 		public float CircleGrowRatioMask { 
 			get { return circleGrowRatioMask; }
 			set {
@@ -89,27 +93,29 @@ namespace MaterialSharp {
 
 		nfloat cornerRadius = 2.5f;
 		[Browsable(true)]
+		[Export("CornerRadius")]
 		public nfloat CornerRadius { 
 			get { return cornerRadius; }
 			set { 
 				cornerRadius = value;
-				Layer.CornerRadius = value;
 				materialLayer.SetMaskLayerCornerRadius (cornerRadius);
 			}
 		}
 
 		UIColor circleLayerColor = UIColor.FromWhiteAlpha (0.45f, 0.5f);
 		[Browsable(true)]
+		[Export("CircleLayerColor")]
 		public UIColor CircleLayerColor {
 			get { return circleLayerColor; }
 			set { 
-				circleLayerColor = value;
+				value = circleLayerColor;
 				materialLayer.SetCircleLayerColor (value);
 			}
 		}
 
 		UIColor backgroundLayerColor = UIColor.FromWhiteAlpha (0.75f, 0.5f);
 		[Browsable(true)]
+		[Export("BackgroundLayerColor")]
 		public UIColor BackgroundLayerColor {
 			get { return backgroundLayerColor; }
 			set { 
@@ -126,7 +132,7 @@ namespace MaterialSharp {
 			SetupLayer ();
 		}
 
-        protected MaterialImageView (IntPtr handle) : base (handle)
+        public MaterialImageView (IntPtr handle) : base (handle)
 		{
 			SetupLayer ();
 		}
@@ -145,6 +151,7 @@ namespace MaterialSharp {
 
 		bool maskEnabled = true;
 		[Browsable(true)]
+		[Export("MaskEnabled")]
 		public bool MaskEnabled {
 			get { return maskEnabled; }
 			set {
@@ -155,6 +162,7 @@ namespace MaterialSharp {
 
 		RippleLocation rippleLocation = RippleLocation.TapLocation;
 		[Browsable(true)]
+		[Export("RippleLocation")]
 		public RippleLocation RippleLocation {
 			get { return rippleLocation; }
 			set { 
@@ -169,6 +177,7 @@ namespace MaterialSharp {
 
 		bool backgroundAnimationEnabled = true;
 		[Browsable(true)]
+		[Export("BackgroundAnimationEnabled")]
 		public bool BackgroundAnimationEnabled {
 			get { return backgroundAnimationEnabled; }
 			set { 
@@ -182,6 +191,7 @@ namespace MaterialSharp {
 			
 		float circleGrowRatioMask = 0.9f;
 		[Browsable(true)]
+		[Export("CircleGrowRatioMask")]
 		public float CircleGrowRatioMask { 
 			get { return circleGrowRatioMask; }
 			set {
@@ -192,6 +202,7 @@ namespace MaterialSharp {
 
 		nfloat cornerRadius = 2.5f;
 		[Browsable(true)]
+		[Export("CornerRadius")]
 		public nfloat CornerRadius { 
 			get { return cornerRadius; }
 			set { 
@@ -202,6 +213,7 @@ namespace MaterialSharp {
 
 		UIColor circleLayerColor = UIColor.FromWhiteAlpha (0.45f, 0.5f);
 		[Browsable(true)]
+		[Export("CircleLayerColor")]
 		public UIColor CircleLayerColor {
 			get { return circleLayerColor; }
 			set { 
@@ -212,6 +224,7 @@ namespace MaterialSharp {
 
 		UIColor backgroundLayerColor = UIColor.FromWhiteAlpha (0.75f, 0.5f);
 		[Browsable(true)]
+		[Export("BackgroundLayerColor")]
 		public UIColor BackgroundLayerColor {
 			get { return backgroundLayerColor; }
 			set { 
@@ -228,7 +241,7 @@ namespace MaterialSharp {
 			SetupLayer ();
 		}
 
-        protected MaterialLabel (IntPtr handle) : base (handle)
+        public MaterialLabel (IntPtr handle) : base (handle)
 		{
 			SetupLayer ();
 		}
@@ -247,6 +260,7 @@ namespace MaterialSharp {
 
 		bool maskEnabled = true;
 		[Browsable(true)]
+		[Export("MaskEnabled")]
 		public bool MaskEnabled {
 			get { return maskEnabled; }
 			set {
@@ -257,6 +271,7 @@ namespace MaterialSharp {
 
 		RippleLocation rippleLocation = RippleLocation.TapLocation;
 		[Browsable(true)]
+		[Export("RippleLocation")]
 		public RippleLocation RippleLocation {
 			get { return rippleLocation; }
 			set { 
@@ -271,6 +286,7 @@ namespace MaterialSharp {
 
 		bool backgroundAnimationEnabled = true;
 		[Browsable(true)]
+		[Export("BackgroundAnimationEnabled")]
 		public bool BackgroundAnimationEnabled {
 			get { return backgroundAnimationEnabled; }
 			set { 
@@ -284,6 +300,7 @@ namespace MaterialSharp {
 			
 		float circleGrowRatioMask = 0.9f;
 		[Browsable(true)]
+		[Export("CircleGrowRatioMask")]
 		public float CircleGrowRatioMask { 
 			get { return circleGrowRatioMask; }
 			set {
@@ -294,6 +311,7 @@ namespace MaterialSharp {
 
 		nfloat cornerRadius = 2.5f;
 		[Browsable(true)]
+		[Export("CornerRadius")]
 		public nfloat CornerRadius { 
 			get { return cornerRadius; }
 			set { 
@@ -304,6 +322,7 @@ namespace MaterialSharp {
 
 		UIColor circleLayerColor = UIColor.FromWhiteAlpha (0.45f, 0.5f);
 		[Browsable(true)]
+		[Export("CircleLayerColor")]
 		public UIColor CircleLayerColor {
 			get { return circleLayerColor; }
 			set { 
@@ -314,6 +333,7 @@ namespace MaterialSharp {
 
 		UIColor backgroundLayerColor = UIColor.FromWhiteAlpha (0.75f, 0.5f);
 		[Browsable(true)]
+		[Export("BackgroundLayerColor")]
 		public UIColor BackgroundLayerColor {
 			get { return backgroundLayerColor; }
 			set { 
@@ -330,7 +350,7 @@ namespace MaterialSharp {
 			SetupLayer ();
 		}
 
-        protected MaterialTextField (IntPtr handle) : base (handle)
+        public MaterialTextField (IntPtr handle) : base (handle)
 		{
 			SetupLayer ();
 		}
@@ -349,6 +369,7 @@ namespace MaterialSharp {
 
 		bool maskEnabled = true;
 		[Browsable(true)]
+		[Export("MaskEnabled")]
 		public bool MaskEnabled {
 			get { return maskEnabled; }
 			set {
@@ -359,6 +380,7 @@ namespace MaterialSharp {
 
 		RippleLocation rippleLocation = RippleLocation.TapLocation;
 		[Browsable(true)]
+		[Export("RippleLocation")]
 		public RippleLocation RippleLocation {
 			get { return rippleLocation; }
 			set { 
@@ -373,6 +395,7 @@ namespace MaterialSharp {
 
 		bool backgroundAnimationEnabled = true;
 		[Browsable(true)]
+		[Export("BackgroundAnimationEnabled")]
 		public bool BackgroundAnimationEnabled {
 			get { return backgroundAnimationEnabled; }
 			set { 
@@ -386,6 +409,7 @@ namespace MaterialSharp {
 			
 		float circleGrowRatioMask = 0.9f;
 		[Browsable(true)]
+		[Export("CircleGrowRatioMask")]
 		public float CircleGrowRatioMask { 
 			get { return circleGrowRatioMask; }
 			set {
@@ -396,6 +420,7 @@ namespace MaterialSharp {
 
 		nfloat cornerRadius = 2.5f;
 		[Browsable(true)]
+		[Export("CornerRadius")]
 		public nfloat CornerRadius { 
 			get { return cornerRadius; }
 			set { 
@@ -406,6 +431,7 @@ namespace MaterialSharp {
 
 		UIColor circleLayerColor = UIColor.FromWhiteAlpha (0.45f, 0.5f);
 		[Browsable(true)]
+		[Export("CircleLayerColor")]
 		public UIColor CircleLayerColor {
 			get { return circleLayerColor; }
 			set { 
@@ -416,6 +442,7 @@ namespace MaterialSharp {
 
 		UIColor backgroundLayerColor = UIColor.FromWhiteAlpha (0.75f, 0.5f);
 		[Browsable(true)]
+		[Export("BackgroundLayerColor")]
 		public UIColor BackgroundLayerColor {
 			get { return backgroundLayerColor; }
 			set { 
@@ -432,7 +459,7 @@ namespace MaterialSharp {
 			SetupLayer ();
 		}
 
-        protected MaterialTableViewCell (IntPtr handle) : base (handle)
+        public MaterialTableViewCell (IntPtr handle) : base (handle)
 		{
 			SetupLayer ();
 		}
@@ -451,6 +478,7 @@ namespace MaterialSharp {
 
 		bool maskEnabled = true;
 		[Browsable(true)]
+		[Export("MaskEnabled")]
 		public bool MaskEnabled {
 			get { return maskEnabled; }
 			set {
@@ -461,6 +489,7 @@ namespace MaterialSharp {
 
 		RippleLocation rippleLocation = RippleLocation.TapLocation;
 		[Browsable(true)]
+		[Export("RippleLocation")]
 		public RippleLocation RippleLocation {
 			get { return rippleLocation; }
 			set { 
@@ -475,6 +504,7 @@ namespace MaterialSharp {
 
 		bool backgroundAnimationEnabled = true;
 		[Browsable(true)]
+		[Export("BackgroundAnimationEnabled")]
 		public bool BackgroundAnimationEnabled {
 			get { return backgroundAnimationEnabled; }
 			set { 
@@ -488,6 +518,7 @@ namespace MaterialSharp {
 			
 		float circleGrowRatioMask = 0.9f;
 		[Browsable(true)]
+		[Export("CircleGrowRatioMask")]
 		public float CircleGrowRatioMask { 
 			get { return circleGrowRatioMask; }
 			set {
@@ -498,6 +529,7 @@ namespace MaterialSharp {
 
 		nfloat cornerRadius = 2.5f;
 		[Browsable(true)]
+		[Export("CornerRadius")]
 		public nfloat CornerRadius { 
 			get { return cornerRadius; }
 			set { 
@@ -508,6 +540,7 @@ namespace MaterialSharp {
 
 		UIColor circleLayerColor = UIColor.FromWhiteAlpha (0.45f, 0.5f);
 		[Browsable(true)]
+		[Export("CircleLayerColor")]
 		public UIColor CircleLayerColor {
 			get { return circleLayerColor; }
 			set { 
@@ -518,6 +551,7 @@ namespace MaterialSharp {
 
 		UIColor backgroundLayerColor = UIColor.FromWhiteAlpha (0.75f, 0.5f);
 		[Browsable(true)]
+		[Export("BackgroundLayerColor")]
 		public UIColor BackgroundLayerColor {
 			get { return backgroundLayerColor; }
 			set { 

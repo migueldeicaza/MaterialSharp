@@ -12,7 +12,8 @@ using System.ComponentModel;
 
 namespace MaterialSharp
 {
-	[DesignTimeVisible]
+	[DesignTimeVisible (true)]
+	[Category ("MaterialSharp")]
 	[Register ("MaterialLabel")]
 	public partial class MaterialLabel : UILabel
 	{
