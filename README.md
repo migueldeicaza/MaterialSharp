@@ -9,3 +9,11 @@ under the MIT license.   This port is based on the revision from:
 
 Look at https://github.com/nghialv/MaterialKit for some samples of how this works.
 
+SnackBar
+========
+
+If you want an implementation of the Material Design Snackbar for iOS,
+you can use Derek Beattie's implementation:
+
+https://github.com/dbeattie71/SnackbarSharp
+
