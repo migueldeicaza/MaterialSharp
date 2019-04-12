@@ -1,3 +1,5 @@
+Note: There are now better ways of getting Material looks in your C#/iOS apps.
+
 MaterialSharp
 =============
 
